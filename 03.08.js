@@ -3,6 +3,7 @@
 // npm init -- save express
 //const fs = require("fs");
 const express = require("express");
+var path = require('path');
 xport = process.env.PORT || 3000;
 
 const app = express();
@@ -10,25 +11,25 @@ const router = express.Router()
 
 router.get('/', 
 (req, res) => {
-    res.sendFile("./View/home.html");
+    res.sendFile(__dirname + "/View/home.html");
 });
 
 router.get('/', 
 (req, res) => {
-    res.sendFile("./View/profile.html");
+    res.sendFile(__dirname + "/View/profile.html");
 });
 
 //--- Logout
 router.get('/',
     (req, res) => {
-        res.sendFile("./View/logout.html");
+        res.sendFile(__dirname + "/View/logout.html");
     }
 );
 
 //--- Login
 router.get('/',
     (req, res) => {
-        res.sendFile("./View/login.html");
+        res.sendFile(__dirname + "/View/login.html");
     }
 );
 
