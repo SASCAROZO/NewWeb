@@ -8,31 +8,27 @@ xport = process.env.PORT || 3000;
 const app = express();
 const router = express.Router()
 
-router.get('/home', 
+router.get('/', 
 (req, res) => {
-    res.setHeader('Content-Type','text/html; charset = utf-8');
-    res.send("HomePage");
+    res.sendFile("./View/home.html");
 });
 
-router.get('/Profile', 
+router.get('/', 
 (req, res) => {
-    res.setHeader('Content-Type','text/html; charset = utf-8');
-    res.send("ProfilePage");
+    res.sendFile("./View/profile.html");
 });
 
 //--- Logout
-router.get('/logout',
+router.get('/',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("LogoutPage");
+        res.sendFile("./View/logout.html");
     }
 );
 
 //--- Login
-router.get('/login',
+router.get('/',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("LoginPage");
+        res.sendFile("./View/login.html");
     }
 );
 
