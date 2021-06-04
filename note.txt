@@ -1,0 +1,12 @@
+B1: File / Project NodeJS: 03.08.NodeJS
+B2: File config cua project: package.json
+B3: File config Heroku - running web: Procfile
+B4: Github
+    - Tao Repositories
+    - Upload Project
+B5 Cau hinh Heroku
+    - Tao web App - <A Heroku>
+    - Ket noi vao tai khon Github
+    - Cau hinh toi Repositories
+    - Deploy Project
+    - View ket qua
